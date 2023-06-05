@@ -1,14 +1,22 @@
-import React from 'react';
-import InstagramIcon from '@material-ui/icons/Instagram';
-import FacebookIcon from '@material-ui/icons/Facebook';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import { Typography, Grid } from '@material-ui/core';
-import { Box } from '@mui/material';
+import React from 'react'
+import InstagramIcon from '@material-ui/icons/Instagram'
+import FacebookIcon from '@material-ui/icons/Facebook'
+import LinkedInIcon from '@material-ui/icons/LinkedIn'
+import { Typography, Grid } from '@material-ui/core'
+import { Box } from '@mui/material'
+import { useSelector } from 'react-redux'
+import { UserState } from '../../../store/token/Reducer'
 import './Footer.css'
 
 function Footer() {
-    return (
-        <>
+    const token = useSelector<UserState, UserState['tokens']>(
+        (state) => state.tokens
+    )
+
+    var footerComponent
+
+    if (token !== '') {
+        footerComponent = (
             <Grid container direction="row" justifyContent="center" alignItems="center">
                 <Grid alignItems="center" item xs={12}>
                     <Box className='box1'>
@@ -29,7 +37,7 @@ function Footer() {
                     </Box>
                     <Box className='box2'>
                         <Box paddingTop={1}>
-                            <Typography variant="subtitle2" align="center" gutterBottom className='textos' >© 2023 Copyright:</Typography>
+                            <Typography variant="subtitle2" align="center" gutterBottom className='textos' >© 2020 Copyright:</Typography>
                         </Box>
                         <Box>
                             <a target="_blank" href="https://brasil.generation.org">
@@ -39,8 +47,14 @@ function Footer() {
                     </Box>
                 </Grid>
             </Grid>
+        )
+    }
+
+    return (
+        <>
+            {footerComponent}
         </>
     )
 }
 
-export default Footer;
+export default Footer

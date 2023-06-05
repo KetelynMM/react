@@ -1,12 +1,19 @@
-.text-decoretor-none1{
-    text-decoration: none;
-}
-
-.cursor{
-    cursor: white;
-}
-
-a {
-    text-decoration: none;
+.cursor {
+    cursor: pointer;
     color: white;
+}
+
+.text-decorator-none {
+    text-decoration: none;
+}
+
+.appbar {
+    height: 7.5vh;
+}
+
+.toolbar {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
