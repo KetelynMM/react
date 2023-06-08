@@ -71,7 +71,7 @@ export default function BasicMenu() {
                     aria-haspopup="true"
                     aria-expanded={open ? 'true' : undefined}
                     onClick={handleClick}
-                    sx={{ color: 'white', width: '100%', display: 'flex', justifyContent: 'space-evenly' }}
+                    sx={{ color: '#DDE7C7', width: '100%', display: 'flex', justifyContent: 'space-evenly', background: '#1b4332' }}
                 >
                     {userId !== '' ? user.nome : 'Login'}
                     <AccountCircleIcon sx={{ fontSize: '250%' }} />

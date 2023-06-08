@@ -1,14 +1,19 @@
 .cursor {
     cursor: pointer;
-    color: white;
+    color: #1b4332;
 }
 
 .text-decorator-none {
     text-decoration: none;
 }
 
+.navbarcor{
+    
+}
+
 .appbar {
     height: 7.5vh;
+    background-color: #DDE7C7 !important;
 }
 
 .toolbar {

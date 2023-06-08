@@ -19,36 +19,36 @@ function Navbar() {
             <AppBar position="static" className='appbar'>
                 <Toolbar variant="dense" className='toolbar'>
                     <Box className='cursor'>
-                        <Typography variant="h5" color="inherit">
+                        <Typography variant="h5" className='navbarcor'>
                             BlogPessoal
                         </Typography>
                     </Box>
                     <Box display="flex" justifyContent='space-evenly' sx={{ width: '30vw' }}>
                         <Link to="/home" className="text-decorator-none">
                             <Box mx={1} className='cursor'>
-                                <Typography variant="h6" color="inherit">
-                                    Home
+                                <Typography variant="h6" className='navbarcor'>
+                                    Início
                                 </Typography>
                             </Box>
                         </Link>
                         <Link to="/posts" className="text-decorator-none">
                             <Box mx={1} className='cursor'>
-                                <Typography variant="h6" color="inherit">
+                                <Typography variant="h6" className='navbarcor'>
                                     Postagens
                                 </Typography>
                             </Box>
                         </Link>
                         <Link to="/temas" className="text-decorator-none">
                             <Box mx={1} className='cursor'>
-                                <Typography variant="h6" color="inherit">
+                                <Typography variant="h6" className='navbarcor'>
                                     Temas
                                 </Typography>
                             </Box>
                         </Link>
                         <Link to="/formularioTema" className="text-decorator-none">
                             <Box mx={1} className='cursor'>
-                                <Typography variant="h6" color="inherit">
-                                    Cadastrar Tema
+                                <Typography variant="h6" className='navbarcor'>
+                                    Criar Tema
                                 </Typography>
                             </Box>
                         </Link>
